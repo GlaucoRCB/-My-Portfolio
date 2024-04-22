@@ -20,6 +20,17 @@ body{
     display: flex;
 }
 
+h2.titulo{
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h2.titulo span{
+    color:rgba(10, 109, 238, 0.842);
+}
+
 /* Estilo Do Cabeçalho */
 header{
     padding: 40px 4%;
@@ -102,6 +113,7 @@ section.topo-do-site .flex{
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
     border-radius: 100%;
+    width: 85%;
 }
 
 /* ANIMATION */
@@ -114,4 +126,32 @@ section.topo-do-site .flex{
     100%{
         top: 30px;
     }
+}
+
+/* HARD SKILLS */
+
+section.Hard-Skills{
+    padding: 40px 4%;
+}
+
+section.Hard-Skills .flex{
+    gap: 60px;
+}
+
+.Hard-Skills .Hard-Skills-Box{
+    padding: 40px;
+    margin-left: 18%;
+    margin-top: 30px;
+}
+
+.angular{
+    width: 22%;
+}
+
+.hcj{ 
+    width: 28%;
+}
+
+.mongo{
+    width: 25%;
 }
