@@ -22,7 +22,7 @@ body{
 
 h2.titulo{
     color: #fff;
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
     margin-top: 10px;
 }
@@ -113,7 +113,7 @@ section.topo-do-site .flex{
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
     border-radius: 100%;
-    width: 85%;
+    width: 70%;
 }
 
 /* ANIMATION */
@@ -140,18 +140,26 @@ section.Hard-Skills .flex{
 
 .Hard-Skills .Hard-Skills-Box{
     padding: 40px;
-    margin-left: 18%;
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hard-Skills .Hard-Skills-Box:hover{
+    filter: drop-shadow(10px 7px 10px rgb(0, 110, 255));
 }
 
 .angular{
-    width: 22%;
+    width: 17%;
+    margin-right: 100px;
 }
 
 .hcj{ 
-    width: 28%;
+    width: 23%;
 }
 
 .mongo{
-    width: 25%;
+    width: 20%;
+    margin-left: 100px;
 }
