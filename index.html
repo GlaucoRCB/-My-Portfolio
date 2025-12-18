@@ -19,51 +19,88 @@
 </head>
 
 <body>
-    <header>
-        <div class="interface">
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
-                </ul>
-            </nav>
-            <div class="btn-contato">
-                <a href="#">
-                    <button>Contato</button>
-                </a>
-            </div><!--btn-contato-->
-        </div><!--interface-->
-    </header>
-
-    <main>
-        <section class="topo-do-site">
+    <canvas id="particles"></canvas>
+    <div class="container-principal">
+        <header>
             <div class="interface">
-                <div class="flex">
-                    <div class="txt-topo-site">
-                        <h1>Software Enginner<span>.</span></h1>
-                        <p>Olá, me chamo Glauco, e sou um software enginner.</p>
-                    </div><!--txt-topo-site-->
-                    <div class="img-topo-site">
-                        <img src="./images/fotoperfiltrabalhopngcircle.png" alt="foto-do-dev">
-                    </div><!--img-topo-site-->
-                </div><!--flex-->
-            </div><!--interface--> 
-        </section><!--topo-do-site-->
-    </main>
+                <nav class="menu-desktop" aria-label="Menu-principal">
+                    <ul>
+                        <li><a href="#">Sobre Mim</a></li>
+                        <li><a href="#">Projetos</a></li>
+                    </ul>
+                </nav>
+                <div class="btn-contato">
+                    <a href="#">
+                        <button>Contato</button>
+                    </a>
+                </div><!--btn-contato-->
+            </div><!--interface-->
+        </header>
 
-    <section class="Hard-Skills">
-        <div class="interface">
-            <h2 class="titulo">HARD <span>SKILLS.</span></h2>
-            <div class="flex">
-                <div class="Hard-Skills-Box">
-                    <img src="./images/angular.png" alt="Angular" class="angular">
-                    <img src="./images/htmlCssJs.png" alt="Html Css Js" class="hcj">
-                    <img src="./images/mongodb.png" alt="MongoDb" class="mongo">
+        <main>
+            <section class="topo-do-site">
+                <div class="interface">
+                    <div class="flex">
+                        <div class="txt-topo-site">
+                            <h1>Desenvolvedor Junior<span>.</span></h1>
+                            <p>Olá! Sou Glauco Rodrigues, formado em Redes de Computadores e atualmente cursando Análise
+                                e
+                                Desenvolvimento de Sistemas. Tenho direcionado meus esforços para me desenvolver como
+                                programador, aprendendo continuamente e explorando novas tecnologias.</p>
+                            <p>Sou movido pela curiosidade e pela vontade de entender como as coisas funcionam. Gosto de
+                                encarar desafios, resolver problemas de forma prática transformando ideias em soluções
+                                reais. Nos últimos meses, tenho me dedicado especialmente a Python, FastAPI e automação,
+                                sempre buscando evoluir minhas habilidades.</p>
+                            <p>Atualmente, busco uma oportunidade como desenvolvedor júnior ou estagiário, onde eu possa
+                                contribuir, aprender com profissionais experientes.</p>
+                        </div><!--txt-topo-site-->
+                        <div class="img-topo-site">
+                            <img src="./images/MinhaFoto.jpeg" alt="foto-do-dev">
+                        </div><!--img-topo-site-->
+                    </div><!--flex-->
+                </div><!--interface-->
+            </section><!--topo-do-site-->
+        </main>
+
+        <section class="Languages">
+            <div class="interface">
+                <h2 class="titulo">Principais <span>Linguagens.</span></h2>
+                <div class="Principais-Linguagens">
+                    <img src="./images/typescript.png" class="language-icon" alt="typescript">
+                    <img src="./images/python.png" class="language-icon" alt="python">
+                    <img src="./images/java.png" class="language-icon" alt="java">
+                    <img src="./images/javascript.png" class="language-icon" alt="javascript">
                 </div>
+        </section>
+        <section class="Framworks">
+            <h3 class="titulo">Principais <span>Frameworks</span></h3>
+            <div class="Principais-Frameworks">
+                <img src="./images/angular.png" class="framework-icon" alt="angular">
+                <img src="./images/sprinboot.png" class="framework-icon" alt="springboot">
+                <img src="./images/express.png" class="framework-icon" alt="express">
             </div>
-        </div><!--interface-->
-    </section><!--Hard-Skills-->
-
+        </section>
+        <section class="DataBases">
+            <h3 class="titulo">Banco De<span>Dados</span></h3>
+            <div class="Principais-Banco-De-Dados">
+                <img src="./" class="DB-icon" alt="MySQL">
+                <img src="./" class="DB-icon" alt="MongoDB">
+                <img src="./" class="DB-icon" alt="Firebase">
+            </div>
+        </section>
+        <section class="Other-technology">
+            <h3 class="titulo">Outras Tecnologias</h3>
+            <div class="Outras-Tecnologias">
+                <img src="" class="other-technology-icon" alt="Docker">
+                <img src="" class="other-technology-icon" alt="Git">
+                <img src="" class="other-technology-icon" alt="Github">
+                <img src="" class="other-technology-icon" alt="NodeJs">
+                <img src="" class="other-technology-icon" alt="HtmlCss">
+            </div>
+        </section>
+    </div>
+    <script src="main.js"></script>
+    </div>
 </body>
 
 </html>

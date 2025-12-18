@@ -6,9 +6,27 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-color: black;
-    height: 100vh;
+    min-height: 100vh;
+}
+
+.container-principal{
+    max-width: 1200px;
+    margin: 0 auto; /* centraliza */
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    padding: 20px;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .interface{
@@ -18,11 +36,12 @@ body{
 
 .flex{
     display: flex;
+    flex-wrap: wrap;
 }
 
 h2.titulo{
     color: #fff;
-    font-size: 50px;
+    font-size: clamp(28px, 5vw, 50px);
     text-align: center;
     margin-top: 10px;
 }
@@ -85,81 +104,167 @@ section.topo-do-site{
     padding: 40px 4%;
 }
 
-section.topo-do-site .flex{
+.txt-topo-site {
+    flex: 1;
+    min-width: 300px;
+}
+
+.img-topo-site {
+    flex: 0 0 400px; /* largura fixa no desktop */
+    display: flex;
+    justify-content: center;
+}
+
+.img-topo-site img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20%;
+    box-shadow: 0px 0px 15px rgb(0, 110, 255);
+    display: block;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: clamp(28px, 5vw, 50px);
+    line-height: 40px;
+}
+
+section.topo-do-site .flex {
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 90px;
 }
 
-.topo-do-site h1{
-    color: #fff;
-    font-size: 50px;
-    line-height: 40px;
-}
-
 .topo-do-site .txt-topo-site h1 span{
     color:rgba(10, 109, 238, 0.842);
-    font-size: 70px;
+    font-size: clamp(36px, 6vw, 70px);
 }
 
 .topo-do-site .txt-topo-site p{
     color: #fff;
     margin: 40px 0;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .topo-do-site .img-topo-site img{
     box-shadow: 0px 0px 15px rgb(0, 110, 255);
     position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
-    border-radius: 100%;
-    width: 70%;
+    border-radius: 20%;
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
-/* ANIMATION */
-
-@keyframes flutuar{
-    0%{
-        top: 0;
-    }
-
-    100%{
-        top: 30px;
-    }
-}
-
-/* HARD SKILLS */
-
-section.Hard-Skills{
+section.Languages{
     padding: 40px 4%;
 }
 
-section.Hard-Skills .flex{
+section.Languages .flex{
     gap: 60px;
 }
 
-.Hard-Skills .Hard-Skills-Box{
+.Languages .Principais-Linguagens{
     padding: 40px;
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.Hard-Skills .Hard-Skills-Box:hover{
+.Languages .Principais-Linguagens:hover{
     filter: drop-shadow(10px 7px 10px rgb(0, 110, 255));
 }
 
-.angular{
-    width: 17%;
-    margin-right: 100px;
+.Framworks .Principais-Frameworks{
+    padding: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.hcj{ 
-    width: 23%;
+.Framworks .Principais-Frameworks{
+    filter: drop-shadow(10px 7px 10px rgb(0, 110, 255));
 }
 
-.mongo{
-    width: 20%;
-    margin-left: 100px;
+.DataBases .Principais-Banco-De-Dados{
+    padding: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DataBases .Principais-Banco-De-Dados{
+    filter: drop-shadow(10px 7px 10px rgb(0, 110, 255));
+}
+
+.Other-technology .Outras-Tecnologias{
+    padding: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Other-technology .Outras-Tecnologias{
+    filter: drop-shadow(10px 7px 10px rgb(0, 110, 255));
+}
+
+
+h3.titulo{
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h3.titulo span{
+    color:rgba(10, 109, 238, 0.842);
+}
+
+
+
+.Languages .Principais-Linguagens,
+.Languages .Principais-Frameworks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* CENTRALIZA */
+    align-items: center;
+    filter: drop-shadow(10px 7px 10px rgb(0, 110, 255));
+}
+
+.language-icon,
+.framework-icon {
+    width: clamp(50px, 8vw, 90px);
+    height: auto;
+    margin: 20px;
+}
+
+
+@media (max-width: 768px) {
+
+    header > .interface {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header nav ul li {
+        padding: 10px;
+        display: block;
+        text-align: center;
+    }
+
+    section.topo-do-site .flex {
+        flex-direction: column-reverse;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .Languages .flex {
+        justify-content: center;
+    }
 }
