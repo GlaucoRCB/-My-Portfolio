@@ -11,6 +11,10 @@ body {
     min-height: 100vh;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container-principal{
     max-width: 1200px;
     margin: 0 auto; /* centraliza */
@@ -174,11 +178,7 @@ section.Languages .flex{
     align-items: center;
 }
 
-.Languages .Principais-Linguagens:hover{
-    filter: drop-shadow(10px 7px 10px rgb(0, 110, 255));
-}
-
-.Framworks .Principais-Frameworks{
+.Frameworks .Principais-Frameworks{
     padding: 40px;
     margin-top: 10px;
     display: flex;
@@ -186,9 +186,7 @@ section.Languages .flex{
     align-items: center;
 }
 
-.Framworks .Principais-Frameworks{
-    filter: drop-shadow(10px 7px 10px rgb(0, 110, 255));
-}
+
 
 .DataBases .Principais-Banco-De-Dados{
     padding: 40px;
@@ -198,9 +196,6 @@ section.Languages .flex{
     align-items: center;
 }
 
-.DataBases .Principais-Banco-De-Dados{
-    filter: drop-shadow(10px 7px 10px rgb(0, 110, 255));
-}
 
 .Other-technology .Outras-Tecnologias{
     padding: 40px;
@@ -210,16 +205,12 @@ section.Languages .flex{
     align-items: center;
 }
 
-.Other-technology .Outras-Tecnologias{
-    filter: drop-shadow(10px 7px 10px rgb(0, 110, 255));
-}
 
 
 h3.titulo{
     color: #fff;
     font-size: 35px;
     text-align: center;
-    margin-top: 100px;
 }
 
 h3.titulo span{
@@ -228,17 +219,27 @@ h3.titulo span{
 
 
 
-.Languages .Principais-Linguagens,
-.Languages .Principais-Frameworks {
+.Languages .Principais-Linguagens:hover,
+.Languages .Principais-Frameworks:hover,
+.DataBases .Principais-Banco-De-Dados:hover,
+.Other-technology .Outras-Tecnologias:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* CENTRALIZA */
     align-items: center;
     filter: drop-shadow(10px 7px 10px rgb(0, 110, 255));
+    padding: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .language-icon,
-.framework-icon {
+.framework-icon,
+.DB-icon,
+.other-technology-icon {
     width: clamp(50px, 8vw, 90px);
     height: auto;
     margin: 20px;
@@ -264,7 +265,11 @@ h3.titulo span{
         text-align: center;
     }
 
-    .Languages .flex {
+    .Languages .flex,
+    .Frameworks .flex,
+    .DataBases .flex,
+    .Other-technology .flex {
         justify-content: center;
+        align-items: center;
     }
 }
