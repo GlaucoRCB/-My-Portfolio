@@ -269,6 +269,12 @@ h3.titulo span{
     font-size: 32px;
 }
 
+video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
 
 @media (max-width: 768px) {
 
