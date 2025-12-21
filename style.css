@@ -269,10 +269,15 @@ h3.titulo span{
     font-size: 32px;
 }
 
+.video-container {
+  max-width: 800px;
+  margin: auto;
+}
+
 video {
   width: 100%;
-  max-width: 800px;
   height: auto;
+  border-radius: 8px;
 }
 
 
@@ -302,4 +307,8 @@ video {
         justify-content: center;
         align-items: center;
     }
+
+    .video-container {
+    max-width: 90%;
+  }
 }
