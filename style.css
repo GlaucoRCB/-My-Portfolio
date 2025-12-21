@@ -242,7 +242,6 @@ h3.titulo span{
 
 .Projetos {
     color: rgba(148, 148, 150, 0.842);
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,7 +252,8 @@ h3.titulo span{
     color: #fff;
     display: flex;
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 
 .Projetos a:hover{
