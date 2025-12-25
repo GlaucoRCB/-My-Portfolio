@@ -39,7 +39,7 @@ function draw() {
 
     ctx.beginPath();
     ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-    ctx.fillStyle = "#00d4ff";
+    ctx.fillStyle = "#0011ffff";
     ctx.fill();
   });
 
@@ -54,7 +54,7 @@ function draw() {
         ctx.beginPath();
         ctx.moveTo(particles[i].x, particles[i].y);
         ctx.lineTo(particles[j].x, particles[j].y);
-        ctx.strokeStyle = `rgba(0, 212, 255, ${1 - distance / maxDistance})`;
+        ctx.strokeStyle = `rgba(0, 110, 255, ${1 - distance / maxDistance})`;
         ctx.lineWidth = 1;
         ctx.stroke();
       }
